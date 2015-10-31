@@ -33,7 +33,7 @@ stty_init
 bash ./color_output.sh "Hello World!\n" grey sblue
 bash ./color_output.sh "Hello World!\n" blue
 bash ./color_output.sh "Hello World!"
-
+bash ./game_interface.sh 10 10 30
 read -s -n 1				#按任意键退出
 game_exit
 exit 0
