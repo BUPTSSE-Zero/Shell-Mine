@@ -400,7 +400,7 @@ function main()
 
 cd $(dirname $0)
 stty_init
-bash ./menu.sh
+bash ./menu1.sh
 main
 game_exit
 exit 0
