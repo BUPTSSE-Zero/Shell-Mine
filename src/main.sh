@@ -341,6 +341,7 @@ function dig()
 	if [ ${grid_has_mine[$temp_index]} -eq $TRUE ]; then					#挖到地雷
 		bash ./color_output.sh "@" grey red
 		read -s -n 1
+		clear
 		bash ./lost_dialog.sh
 		query_replay
 	elif [ ${grid_mine_num_surround[$temp_index]} -eq 0 ]; then				#周围没有地雷
@@ -353,6 +354,7 @@ function dig()
 	fi
 	check_win
 	if [ $? -eq $TRUE ]; then												#玩家赢
+		clear
 		bash ./win_dialog.sh
 		query_replay
 	fi
